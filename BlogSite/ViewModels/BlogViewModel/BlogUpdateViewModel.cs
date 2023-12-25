@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace BlogSite.ViewModels
+namespace BlogSite.ViewModels.BlogViewModel
 {
     public class BlogUpdateViewModel
     {

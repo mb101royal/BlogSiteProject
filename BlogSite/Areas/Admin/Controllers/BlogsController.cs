@@ -1,6 +1,6 @@
 ﻿using BlogSite.Context;
 using BlogSite.Models;
-using BlogSite.ViewModels;
+using BlogSite.ViewModels.BlogViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

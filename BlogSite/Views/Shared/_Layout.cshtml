@@ -24,6 +24,8 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="~/vendor/css/owl.carousel.min.css">
     <link rel="stylesheet" href="~/blog/css/style.css">
+
+    @RenderSection("Styles", false)
 </head>
 
 
@@ -43,7 +45,7 @@
         <nav id="my-nav" class="navbar navbar-expand-lg navbar-light rounded-bar sidemenu-nav">
 
             <div class="logo width-logo1">
-                <a href="index-blog.html"><img src="~/blog/img/logo-white.png" alt="Logo Img"></a>
+                <a asp-action="Index" asp-controller="Home"><img src="~/blog/img/logo-white.png" alt="Logo Img"></a>
             </div>
             <div class="menu-btn ml-auto">
                 <span></span>
@@ -73,6 +75,8 @@
                                 <li class="nav-item"><a class="nav-link" href="~/blog/top-stories.html">Top Stories</a></li>
                                 <li class="nav-item"><a class="nav-link" href="~/blog/blogs.html">Blogs</a></li>
                                 <li class="nav-item"><a class="nav-link" href="~/blog/contact.html">Contact</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-action="Register" asp-controller="Auth">Register</a></li>
+                                <li class="nav-item"><a class="nav-link" asp-action="Login" asp-controller="Auth">Login</a></li>
                             </ul>
                             <ul class="footer_ul text-center mt-3 margin-top">
                                 <li class="footer_list"><i class="lab la-facebook-f"></i></li>
